@@ -1,0 +1,180 @@
+ <!DOCTYPE html>
+ <html lang="en">
+ <head>
+     <meta charset="UTF-8">
+     <title>ACRO_Landmark</title>
+     <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/aos.css">
+    <link rel="stylesheet" href="css/swiper.min.css">
+    <link rel="stylesheet" href="css/sub2.css">
+    
+    <script src="js/jquery-3.5.1.min.js"></script>
+    <script src="js/jquery.easing.1.3.js"></script>
+    <script src="js/aos.js"></script>
+    <script src="js/swiper.min.js"></script>
+    <script src="https://kit.fontawesome.com/cf49693ca4.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap" rel="stylesheet">
+    
+ </head>
+ <body>
+     <div id="wrap">
+        <!--       header-->
+        <div id="header">
+            <div class="header">
+                <div class="menu">
+                    <a href="menu3.html"><i class="fas fa-bars"></i>메뉴</a>
+                </div>
+                <h1 class="title"><a href="index.html">ACRO</a></h1>
+                <ul>
+                    <li><a href="#">고객센터</a></li>
+                    <li><a href="#">로그인</a></li>
+                    <li><a href="#">회원가입</a></li>
+                    <li><a href="#"><i class="fas fa-search"></i></a></li>
+                </ul>
+            </div>
+        </div>
+        
+<!--        content-->
+         <div id="content">
+             <div class="content">
+                 <div class="section1">
+                    <div class="con1">
+                         <h2>단지 정보</h2>
+                         <p>
+                             하이엔드 주거 문화의 기준을 제시한 <br> 아크로의 랜드마크 단지를 소개합니다.
+                         </p>
+                     </div>
+                 </div>
+                 <div class="section2">
+                     <div class="con2">
+                         <ul>
+                             <li>
+                                 <div class="img_box">
+                                     <img src="img/sub2/seoul_forest.jpg" alt="seoul_forest">
+                                 </div>
+                                 <div class="txt_box">
+                                     <strong>아크로 서울포레스트</strong>
+                                     <p>
+                                         시대가 흘러도 변하지 않는 가치 <br> 컬렉션의 완성
+                                     </p>
+                                     <a href="#">바로가기</a>
+                                 </div>
+                             </li>
+                             <li>
+                                <div class="img_box">
+                                     <img src="img/sub2/river_hime.jpg" alt="river_hime">
+                                 </div>
+                                 <div class="txt_box">
+                                     <strong>아크로 리버하임</strong>
+                                     <p>
+                                         삶을 더욱 풍요롭게 할 테라스 라이프
+                                     </p>
+                                     <a href="#">바로가기</a>
+                                 </div> 
+                             </li>
+                             <li>
+                                 <div class="img_box">
+                                     <img src="img/sub2/river_view.jpg" alt="river_view">
+                                 </div>
+                                 <div class="txt_box">
+                                     <strong>아크로 리버뷰</strong>
+                                     <p>
+                                         모두가 부러워하는 <br> 아무나 가질 수 없는 가치
+                                     </p>
+                                     <a href="#">바로가기</a>
+                                 </div>
+                             </li>
+                             <li>
+                                 <div class="img_box">
+                                     <img src="img/sub2/tower_square.jpg" alt="tower_square">
+                                 </div>
+                                 <div class="txt_box">
+                                     <strong>아크로 타워스퀘어</strong>
+                                     <p>
+                                         한강의 스카이라인을 바꾼 <br> 초고층 랜드마크
+                                     </p>
+                                     <a href="#">바로가기</a>
+                                 </div>
+                             </li>
+                             <li>
+                                 <div class="img_box">
+                                     <img src="img/sub2/river_park.jpg" alt="river_park">
+                                 </div>
+                                 <div class="txt_box">
+                                     <strong>아크로 리버파크</strong>
+                                     <p>
+                                         하이엔드 주거문화의 첫 시작
+                                     </p>
+                                     <a href="#">바로가기</a>
+                                 </div>
+                             </li>
+                             <li>
+                                 <div class="img_box">
+                                     <img src="img/sub2/hils_nonhyun.jpg" alt="hils_nonhyun">
+                                 </div>
+                                 <div class="txt_box">
+                                     <strong>아크로 힐스논현</strong>
+                                     <p>
+                                         모두가 알고 있는 강남의 중심
+                                     </p>
+                                     <a href="#">바로가기</a>
+                                 </div>
+                             </li>
+                         </ul>
+                     </div>
+                     
+                     <script>
+                        $(document).ready(function(){
+                            $("ul li .txt_box a").mouseenter(function(){
+                                
+                               $(this).parent().css("background-color","#1a1a1a"); 
+                               $(this).parent().find("strong, p").css("color","#fff");
+                               $(this).parent().css("transition","all 0.7s"); 
+                               $(this).css("color","#fff"); 
+                                $(this).parent().parent().find(".img_box img").css("transform", "scale(1.08)");
+                                $(this).parent().parent().find(".img_box img").css("transition", "all 0.7s");
+                                
+                            }).mouseleave(function(){
+                                $(this).parent().css("background-color","#f6f6f6"); 
+                                $(this).css("color","#1a1a1a");
+                                $(this).parent().find("strong, p").css("color","#1a1a1a");
+                                $(this).parent().parent().find(".img_box img").css("transform", "scale(1)");
+                                $(this).parent().parent().find(".img_box img").css("transition", "all 0.7s");
+                            });
+                            
+                        });
+                         
+                         
+                     </script>
+                 </div>
+             </div>
+         </div>
+         <!--       footer-->
+       <div id="footer">
+           <div class="footer">
+               <ul>
+                   <li><a href="#">이용약관</a></li>
+                   <li><a href="#">개인정보 처리방침</a></li>
+                   <li><a href="#">영상정보처리 기기운영 및 관리방침</a></li>
+                   <li><a href="#">이메일무단수집거부</a></li>
+                   <li><a href="#">사이트맵</a></li>
+               </ul>
+               <p>
+                   사업자명:디엘이앤씨(주) &nbsp;&nbsp; 사업자등록증:676-87-01904 &nbsp;&nbsp; 대표자:마창민
+               </p>
+               <p>
+                   본 사이트에 사용된 CG 및 일러스트, 이미지 등은 소비자의 이해를 돕기 위한 것으로 실제와 다를 수 있습니다.
+               </p>
+               <p>
+                   &copy; DL E&#38;C. All rights Reserved.
+               </p>
+               <img src="img/main/logo.png" alt="logo">
+           </div>
+       </div>
+       <div id="footer_end">
+           <div class="footer_end"></div>
+       </div>
+    </div>
+ </body>
+ </html>

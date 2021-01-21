@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>ACRO_MENU</title>
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/aos.css">
+    <link rel="stylesheet" href="css/swiper.min.css">
+    <link rel="stylesheet" href="css/menu.css">
+    
+    <script src="js/jquery-3.5.1.min.js"></script>
+    <script src="js/jquery.easing.1.3.js"></script>
+    <script src="js/aos.js"></script>
+    <script src="js/swiper.min.js"></script>
+    <script src="https://kit.fontawesome.com/cf49693ca4.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap" rel="stylesheet">
+    
+    
+    <script>
+        $(function(){
+            $(".menu>li").on({
+                mouseenter:function(){
+                    var i=$(this).index();
+                    $(".menu>li").addClass("on");
+                    $(".menu>li").eq(i).addClass("off");
+                },
+                mouseleave:function(){
+                    $(".menu>li").removeClass("on");
+                    $(".menu>li").removeClass("off");
+                }
+            });
+        });
+    </script>
+    
+</head>
+<body>
+    <div id="wrap">
+        <div id="header">
+            <div class="header"></div>
+        </div>
+        <div class="section">
+            <div class="content">
+                <div class="con1">
+                    <h3><a href="index.html">ACRO</a></h3>
+                    <ul class="menu">
+                        <li class="li1">
+                            <a href="sub1.html">브랜드</a>
+                            <a href="sub1.html">Brand</a>
+                        </li>
+                        <li class="li2">
+                            <a href="sub2.html">단지 정보</a>
+                            <a href="sub2.html">Landmark</a>
+                        </li>
+                        <li class="li3">
+                            <a href="sub3.html">아크로 갤러리</a>
+                            <a href="sub3.html">ACRO Gallery</a>
+                        </li>
+                        <li class="li4">
+                            <a href="sub4.html">새소식</a>
+                            <a href="sub4.html">ACRO News</a>
+                        </li>
+                    </ul>
+                    <ul class="login">
+                        <li><a href="#">고객센터</a></li>
+                        <li><a href="#">로그인</a></li>
+                        <li><a href="#">회원가입</a></li>
+                    </ul>
+                </div>
+                <div class="con2">
+                    <div class="con2_close">
+                        <a href="sub4.html"><img src="img/menu/close.png" alt="close"></a>
+                    </div>
+                    <div class="con2_img">
+                        <img src="img/menu/seoul_forest.jpg" alt="seoul_forest">
+                        <p>아크로 서울포레스트</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="footer">
+            <div class="footer"></div>
+        </div>
+    </div>
+</body>
+</html>
